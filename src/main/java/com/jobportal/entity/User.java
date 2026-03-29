@@ -12,13 +12,15 @@ public class User {
     private String email;
     @Column(nullable = false)
     private String password;
-    @Column(nullable = false)
-    private String role; //job seeker or employ
+   
+   
+    
+    @Enumerated(EnumType.STRING)
+     @Column(nullable = false)
+    private Role role;
 
     //constructors
-    public User(){ 
-    }
-    public User(String name, String email, String password,String role){
+    public User(String name, String email, String password,Role role){
          this.name = name;
          this.email = email;
          this.password= password;
@@ -46,10 +48,10 @@ public class User {
    public void setPassword(String password){
       this.password = password;
    }
-   public String getRole(){
+   public Role getRole(){
     return role;
    }
-   public void setRole(String role){
+   public void setRole(Role role){
      this.role = role;
    }
 }
