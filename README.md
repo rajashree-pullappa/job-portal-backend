@@ -116,7 +116,7 @@ Tables:
 
 1. Clone repository
 
-git clone https://github.com/your-username/jobportal.git
+git clone https://github.com/rajashree-pullappa/job-portal-backend.git
 
 
 2. Open project in VS Code / IntelliJ
