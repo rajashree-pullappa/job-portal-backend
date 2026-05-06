@@ -19,6 +19,9 @@ public class User {
      @Column(nullable = false)
     private Role role;
 
+    public User(){
+
+    }
     //constructors
     public User(String name, String email, String password,Role role){
          this.name = name;
